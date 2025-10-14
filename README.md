@@ -164,12 +164,12 @@ app.log -	Application activity and error log
 
 ### 🧠 Business Rules Implemented
 
--- ISBN must be unique.
--- Available copies cannot exceed total stock.
--- Members must be active to borrow books.
--- Loans must respect configured due dates.
--- Fines = (days late × multaPorDia).
--- Database integrity guaranteed by transactions and rollback on failure.
+- ISBN must be unique.
+- Available copies cannot exceed total stock.
+- Members must be active to borrow books.
+- Loans must respect configured due dates.
+- Fines = (days late × multaPorDia).
+- Database integrity guaranteed by transactions and rollback on failure.
 
 ### 🧑‍💻 Developer Notes
 
