@@ -52,15 +52,15 @@ This project was developed as part of a **Java SE performance assessment**, demo
   diasPrestamo=7
   multaPorDia=1500
 
--- app.log records user actions and errors.
+- app.log records user actions and errors.
 
--- CSV export utilities for catalog, members, and loans.
+- CSV export utilities for catalog, members, and loans.
 
 ### 🧩 Architecture & Design
 
--- Layered architecture:
+- Layered architecture:
 
--- controller → service → dao → model
+- controller → service → dao → model
 
 
 Uses JavaFX for the interface instead of JOptionPane.
@@ -71,9 +71,9 @@ Reusable utilities for DB connections, CSV handling, and logging.
 
 ### 🧪 Testing (JUnit 5)
 
--- Unit tests for business logic:
--- Fine calculation.
--- Stock and ISBN validation.
+- Unit tests for business logic:
+- Fine calculation.
+- Stock and ISBN validation.
 
 ### Executed with Maven:
 
@@ -81,43 +81,43 @@ Reusable utilities for DB connections, CSV handling, and logging.
 
 ### 🏗️ Project Structure
 ### src/main/java/com/libronova/
-│
-├── controller/        → JavaFX controllers (UI logic)
-├── dao/               → Interfaces for database operations
-├── dao/impl/          → JDBC implementations of DAOs
-├── decorator/          → Decorator for user defaults
-├── exception/          → Custom business and validation exceptions
-├── model/              → POJO entities (Book, User, Member, Loan)
-├── service/            → Business logic and transaction control
-├── util/               → DB, CSV, Logging helpers
-├── validation/         → Business rule validators
-└── MainApp.java        → Application entry point
+- │
+- ├── controller/        → JavaFX controllers (UI logic)
+- ├── dao/               → Interfaces for database operations
+- ├── dao/impl/          → JDBC implementations of DAOs
+- ├── decorator/          → Decorator for user defaults
+- ├── exception/          → Custom business and validation exceptions
+- ├── model/              → POJO entities (Book, User, Member, Loan)
+- ├── service/            → Business logic and transaction control
+- ├── util/               → DB, CSV, Logging helpers
+- ├── validation/         → Business rule validators
+- └── MainApp.java        → Application entry point
 
 ### 🧰 Technologies Used
-Category - Technology
-Language - Java SE 17+
-Framework - JavaFX 21
-Database - MySQL 8+
-ORM / Persistence -	JDBC with transactions
-Build Tool -	Apache Maven 3.9+
-Testing -	JUnit 5
-Logging -	java.util.logging
-File Handling -	CSV & .properties
-Architecture -	MVC / Layered Design
+- Category - Technology
+- Language - Java SE 17+
+- Framework - JavaFX 21
+- Database - MySQL 8+
+- ORM / Persistence -	JDBC with transactions
+- Build Tool -	Apache Maven 3.9+
+- Testing -	JUnit 5
+- Logging -	java.util.logging
+- File Handling -	CSV & .properties
+- Architecture -	MVC / Layered Design
 
 ### ⚡ Setup Instructions
 
 ### 1️⃣ Database Configuration
 
--- Run the schema.sql script in MySQL Workbench or any client:
+- Run the schema.sql script in MySQL Workbench or any client:
 
 CREATE DATABASE libronova CHARACTER SET utf8mb4;
 USE libronova;
 
--- Tables: usuarios, socios, libros, prestamos
--- Default admin user:
--- INSERT INTO usuarios (username, password, rol, activo)
--- VALUES ('admin', 'admin123', 'ADMIN', TRUE);
+- Tables: usuarios, socios, libros, prestamos
+- Default admin user:
+- INSERT INTO usuarios (username, password, rol, activo)
+- VALUES ('admin', 'admin123', 'ADMIN', TRUE);
 
 ### 2️⃣ Configure config.properties
 
@@ -125,11 +125,11 @@ Located in:
 
 ### src/main/resources/config/config.properties
 
--- db.url=jdbc:mysql://localhost:3306/libronova
--- db.user=root
--- db.password=your_password
--- diasPrestamo=7
--- multaPorDia=1500
+- db.url=jdbc:mysql://localhost:3306/libronova
+- db.user=root
+- db.password=your_password
+- diasPrestamo=7
+- multaPorDia=1500
 
 ### 3️⃣ Build & Run
 
