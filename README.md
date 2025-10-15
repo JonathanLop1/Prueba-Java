@@ -133,14 +133,14 @@ Located in:
 
 ### 3️⃣ Build & Run
 
--- mvn clean install
--- mvn javafx:run
+- mvn clean install
+- mvn javafx:run
 
 ### 4️⃣ Login Credentials
 
--- Username: admin
--- Password: admin123
--- Role: ADMIN
+- Username: admin
+- Password: admin123
+- Role: ADMIN
 
 💻 Interface Overview
 Module - Description
@@ -192,9 +192,9 @@ You’re free to use, modify, and distribute with proper attribution.
 
 ## Developed by:
 
--- Jonathan Andres Lopez Contreras
--- 1065854138
--- Cienaga
--- jonathandres0309@gmail.com
+- Jonathan Andres Lopez Contreras
+- 1065854138
+- Cienaga
+- jonathandres0309@gmail.com
 
 ### 💼 Java Software Developer — OOP | JDBC | JavaFX | MySQL
