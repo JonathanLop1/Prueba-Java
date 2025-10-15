@@ -56,12 +56,15 @@ This project was developed as part of a **Java SE performance assessment**, demo
 
 - CSV export utilities for catalog, members, and loans.
 
+---
+
 ### 🧩 Architecture & Design
 
 - Layered architecture:
 
 - controller → service → dao → model
 
+---
 
 Uses JavaFX for the interface instead of JOptionPane.
 
@@ -69,15 +72,21 @@ Exception-driven business validations.
 
 Reusable utilities for DB connections, CSV handling, and logging.
 
+---
+
 ### 🧪 Testing (JUnit 5)
 
 - Unit tests for business logic:
 - Fine calculation.
 - Stock and ISBN validation.
 
+---
+
 ### Executed with Maven:
 
 -- mvn test
+
+---
 
 ### 🏗️ Project Structure
 ### src/main/java/com/libronova/
@@ -93,6 +102,8 @@ Reusable utilities for DB connections, CSV handling, and logging.
 - ├── validation/         → Business rule validators
 - └── MainApp.java        → Application entry point
 
+---
+
 ### 🧰 Technologies Used
 - Category - Technology
 - Language - Java SE 17+
@@ -105,11 +116,17 @@ Reusable utilities for DB connections, CSV handling, and logging.
 - File Handling -	CSV & .properties
 - Architecture -	MVC / Layered Design
 
+---
+
 ### ⚡ Setup Instructions
+
+---
 
 ### 1️⃣ Database Configuration
 
 - Run the schema.sql script in MySQL Workbench or any client:
+
+---
 
 CREATE DATABASE libronova CHARACTER SET utf8mb4;
 USE libronova;
@@ -118,6 +135,8 @@ USE libronova;
 - Default admin user:
 - INSERT INTO usuarios (username, password, rol, activo)
 - VALUES ('admin', 'admin123', 'ADMIN', TRUE);
+
+---
 
 ### 2️⃣ Configure config.properties
 
@@ -131,10 +150,14 @@ Located in:
 - diasPrestamo=7
 - multaPorDia=1500
 
+---
+
 ### 3️⃣ Build & Run
 
 - mvn clean install
 - mvn javafx:run
+
+---
 
 ### 4️⃣ Login Credentials
 
@@ -142,7 +165,10 @@ Located in:
 - Password: admin123
 - Role: ADMIN
 
-💻 Interface Overview
+---
+
+### 💻 Interface Overview
+
 Module - Description
 Login -	Simple authentication with roles
 Main Menu	- Navigation to Books, Users, Members, and Loans
@@ -153,6 +179,8 @@ Loans -	Register, return, calculate fines, export
 
 All views are built with JavaFX FXML, styled with a consistent modern design and emoji-based feedback.
 
+---
+
 ### 📂 CSV & Log Outputs
 
 File - Purpose
@@ -161,6 +189,8 @@ socios_export.csv -	Member registry
 prestamos.csv -	All loan records
 prestamos_vencidos.csv - Overdue loans
 app.log -	Application activity and error log
+
+---
 
 ### 🧠 Business Rules Implemented
 
@@ -171,7 +201,11 @@ app.log -	Application activity and error log
 - Fines = (days late × multaPorDia).
 - Database integrity guaranteed by transactions and rollback on failure.
 
+---
+
 ### 🧑‍💻 Developer Notes
+
+---
 
 ### Built and tested with:
 
@@ -180,16 +214,20 @@ app.log -	Application activity and error log
 - MySQL 8.0
 - Maven 3.9.6
 
+---
 
 ### ✅ Compatible with Windows, macOS, and Linux.
+
+---
 
 ### 🏁 License
 
 This project is released under the MIT License.
 You’re free to use, modify, and distribute with proper attribution.
 
-### 👨‍💻 Author
+---
 
+### 👨‍💻 Author
 ## Developed by:
 
 - Jonathan Andres Lopez Contreras
